@@ -25,22 +25,19 @@ abstract: "Large language models are widely used, but aligning them with societa
 tags:
 - Language models
 - Model alignment
-- Behavioral data
-- Demographic analysis
-- Societal norms
-- Behavior in the wild
-- Behavioral science
+- Pluralistic alignment
+- Behavioral Learning
 
 summary: ""
 
-featured: false
+featured: true
 
 links:
 url_pdf: "https://behavior-in-the-wild.github.io/align-via-actions.html"
-url_code: ""
-url_dataset: ""
-url_poster: ""
-url_project: ""
+url_code: "https://github.com/behavior-in-the-wild/AlignViaActions50M/"
+url_dataset: "https://github.com/behavior-in-the-wild/AlignViaActions50M/"
+url_poster: "https://drive.google.com/file/d/1s5ac4ViUpWXzNjTcoxk8uquamE_F1ywq/view?usp=sharing"
+url_project: "https://behavior-in-the-wild.github.io/align-via-actions.html"
 url_slides: ""
 url_source: ""
 url_video: ""
