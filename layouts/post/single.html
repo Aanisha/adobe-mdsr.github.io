@@ -34,7 +34,8 @@
       {{ if .Date }}
       <span class="article-date d-inline-flex align-items-center">
         <i class="far fa-calendar-alt mr-1"></i>
-        {{ .Date.Format "January 2, 2006" }}
+        {{ $dateFormat := (.Site.Params.locale.date_format | default .Site.Params.date_format | default "Jan 2, 2006") }}
+        {{ .Date.Format $dateFormat }}
       </span>
       {{ end }}
     </div>

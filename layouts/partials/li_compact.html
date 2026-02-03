@@ -51,11 +51,12 @@
       </div>
       {{ end }}
 
-      {{ if and (eq $item.Type "post") $item.Params.authors $item.Params.date }}<span class="middot-divider d-inline-flex"></span>{{ end }}
-      {{ if $item.Params.date }}
+      {{ $dateFormat := ($item.Site.Params.locale.date_format | default $item.Site.Params.date_format | default "Jan 2, 2006") }}
+      {{ if and (eq $item.Type "post") $item.Params.authors (not $item.Date.IsZero) }}<span class="middot-divider d-inline-flex"></span>{{ end }}
+      {{ if not $item.Date.IsZero }}
       <span class="article-date d-inline-flex align-items-center">
         <i class="far fa-calendar-alt mr-1"></i>
-        {{ $date := $item.Params.date | time.Format "January 2, 2006" }}
+        {{ $date := $item.Date.Format $dateFormat }}
         {{ $date }}
       </span>
       {{ end }}

@@ -73,6 +73,11 @@
       font-weight: 500;
       display: inline-flex;
       align-items: center;
+      font-size: 0.85rem;
+
+      i {
+        font-size: 0.9em;
+      }
     }
     
     .middot-divider {
@@ -122,7 +127,7 @@
     
     .stream-meta.article-metadata {
       .article-date {
-        font-size: 0.95rem;
+        font-size: 0.8rem;
       }
     }
   }
